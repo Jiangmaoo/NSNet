@@ -13,7 +13,7 @@ def train_dataloader(path, batch_size=64, num_workers=0, use_transform=True):
     if use_transform:
         transform = PairCompose(
             [
-                PairRandomCrop(128),     # 256
+                PairRandomCrop(256),     # 256
                 PairRandomHorizontalFilp(),
                 PairRandomVerticalFlip(),
                 PairToTensor()

@@ -3,7 +3,7 @@ from torch import nn
 import torch.nn.functional as F
 # from torch.nn import AvgPool2d
 
-train_size = (1,3,128,128)
+train_size = (1,3,256,256)
 class AvgPool2d(nn.Module):
     def __init__(self, kernel_size=None, base_size=None, auto_pad=True, fast_imp=False):
         super().__init__()
